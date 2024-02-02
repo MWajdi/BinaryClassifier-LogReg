@@ -8,7 +8,7 @@ def filter_dataset(data):
     for i in range(data.__len__()):
         if data.targets[i] in [0,1]:
             indices.append(i)
-    return Subset(data, indices)
+    return Subset(data, indices), indices
 
 
 class Dataset:
@@ -34,6 +34,8 @@ class Dataset:
             transform=self.transform
         )
 
-        self.train_subset = filter_dataset(self.train_data)
-        self.test_subset = filter_dataset(self.test_data)
+        self.train_subset, self.train_indices = filter_dataset(self.train_data)
+        self.test_subset, self.test_indices = filter_dataset(self.test_data)
+        self.train_targets = self.train_data.targets[self.train_indices]
+        self.test_targets = self.test_data.targets[self.test_indices]
 
