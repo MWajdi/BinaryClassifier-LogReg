@@ -80,8 +80,9 @@ class Train:
         self.b = b
 
     def prediction(self, x):
-        z = np.dot(self.w.T, x) + self.b
+        z = np.dot(x,self.w) + self.b
         a = sigmoid(z)
-        
+        print("a = ", a)
+        print("Predicting a ", (a >0.5).astype(int))
         return (a > 0.5).astype(int)
 
