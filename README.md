@@ -1,4 +1,4 @@
-# simple_image_binary_classification
+# BinaryClassifier-LogReg
 
 This project demonstrates a practical application of logistic regression to binary classification, using a simplified version of the MNIST dataset focusing on two digits: 0 and 1. The core objective was to implement logistic regression and the gradient descent optimization algorithm from scratch in Python, providing a hands-on experience with fundamental machine learning concepts.
 
