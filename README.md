@@ -18,3 +18,12 @@ This project demonstrates a practical application of logistic regression to bina
     - Enhanced problem-solving skills through the development of a user interface for model testing.
 
 This project served as a valuable learning experience in machine learning fundamentals, providing a solid foundation for future exploration in the field.
+
+## Authors
+
+    Wajdi Maatouk
+
+## Acknowledgments
+
+    Inspiration and guidance from the Neural Networks and Deep Learning course by DeepLearning.AI, available on Coursera. 
+    MNIST dataset provided by Yann LeCun, Corinna Cortes, and Christopher J.C. Burges.
